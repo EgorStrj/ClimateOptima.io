@@ -1,8 +1,6 @@
 window.onload
 {
     const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
-    const categoriesList = document.getElementsByClassName('categories__list-item-link');
-    const categoriesItems = document.getElementsByClassName('categories__items');
     let aboutBlock = document.getElementsByClassName('about');
     let feedbacksBlock = document.getElementsByClassName('feedbacks');
     let categoriesBlock = document.getElementsByClassName('categories');
