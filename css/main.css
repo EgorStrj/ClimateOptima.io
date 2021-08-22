@@ -329,11 +329,8 @@ h2, h3 {
     font-weight: 700;
 }
 
-.categories {
-    display: none;
-}
 
-.categories.active {
+.categories {
     display: block;
     padding: 65px 0;
     background: #0f0c29; /* fallback for old browsers */
