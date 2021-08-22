@@ -93,44 +93,37 @@
 
 <!--Начало "Категории"-->
 
-<div class="breadcrumbs">
-    <div class="breadcrumbs__container">
-        <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__list-item">
-                <a href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs__list-item">
-                <a href="#">Каталог</a>
-            </li>
-        </ul>
-    </div>
-</div>
+<!--<div class="breadcrumbs">-->
+<!--    <div class="breadcrumbs__container">-->
+<!--        <ul class="breadcrumbs__list">-->
+<!--            <li class="breadcrumbs__list-item">-->
+<!--                <a href="index.html">Главная</a>-->
+<!--            </li>-->
+<!--            <li class="breadcrumbs__list-item">-->
+<!--                <a href="#">Каталог</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div class="categories" id="categories">
     <div class="categories__container">
         <div class="categories__list-container">
             <ul class="categories__list">
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Котельные
-                    системы</a></li>
-                <li class="categories__list-item active"><a href="#" class="categories__list-item-link">Радиаторные
-                    системы</a>
-                </li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Бойлеры</a></li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Насосы</a></li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Трубы</a></li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Системы управления</a>
-                </li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Всё для монтажа</a>
-                </li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Комплекты монтажа</a>
-                </li>
-                <li class="categories__list-item"><a href="#" class="categories__list-item-link">Расширительные баки</a>
-                </li>
+                <li class="categories__list-item"><a href="#heaters" class="categories__list-item-link active">Котельные системы</a></li>
+                <li class="categories__list-item"><a href="#radiators" class="categories__list-item-link">Радиаторные системы</a></li>
+                <li class="categories__list-item"><a href="#boilers" class="categories__list-item-link">Бойлеры</a></li>
+                <li class="categories__list-item"><a href="#pumps" class="categories__list-item-link">Насосы</a></li>
+                <li class="categories__list-item"><a href="#valves" class="categories__list-item-link">Трубы</a></li>
+                <li class="categories__list-item"><a href="#manSystems" class="categories__list-item-link">Системы управления</a></li>
+                <li class="categories__list-item"><a href="#forInstall" class="categories__list-item-link">Всё для монтажа</a></li>
+                <li class="categories__list-item"><a href="#installKits" class="categories__list-item-link">Комплекты монтажа</a></li>
+                <li class="categories__list-item"><a href="#increaseTanks" class="categories__list-item-link">Расширительные баки</a></li>
             </ul>
         </div>
         <div class="categories__items-container">
-            <div class="categories__items heaters" id="1">
-                <div class="categories__item">
+            <div class="categories__items heaters" id="heaters">
+                <a href="catalog/gas-boilers.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg fill="white" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px"
@@ -176,9 +169,9 @@
                     <div class="categories__item-name">
                         Газовые котлы
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/hard-boilers.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg fill="white" height="75"
                                  viewBox="0 0 511.728 511.728" width="75" xmlns="http://www.w3.org/2000/svg">
@@ -193,8 +186,8 @@
                         <div class="categories__item-name">
                             Твердотопливные котлы
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/electric-boilers.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg fill="white" xmlns="http://www.w3.org/2000/svg"
                                  x="0px" y="0px"
@@ -254,11 +247,11 @@
                         <div class="categories__item-name">
                             Электрические котлы
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items radiators" id="2">
-                <div class="categories__item">
+            <div class="categories__items radiators" id="radiators" >
+                <a href="catalog/aluminium-radiators.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg width="115" height="125" viewBox="0 0 115 125" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -281,9 +274,9 @@
                     <div class="categories__item-name">
                         Аллюминиевые радиаторы
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/bimetal-radiators.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="80" height="75" viewBox="0 0 80 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -321,21 +314,21 @@
                         <div class="categories__item-name">
                             Биметаллические радиаторы
                         </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item-image">
-                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M3 2H71C71.5523 2 72 2.44771 72 3V67C72 67.5523 71.5523 68 71 68H3C2.44772 68 2 67.5523 2 67V3C2 2.44772 2.44772 2 3 2ZM0 3C0 1.34315 1.34315 0 3 0H71C72.6569 0 74 1.34315 74 3V67C74 68.6569 72.6569 70 71 70H3C1.34314 70 0 68.6569 0 67V3ZM68 10H7V8H68V10ZM68 15H7V13H68V15ZM68 20H7V18H68V20ZM7 25H68V23H7V25ZM68 59V63H64V59H68ZM61 62.9996L61.0574 59L57.0578 58.9426L57.0004 62.9422L61 62.9996Z"
-                                      fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="categories__item-name">
-                            Конвекторы
-                        </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+<!--                    <a href="catalog/" class="categories__item">-->
+<!--                        <div class="categories__item-image">-->
+<!--                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none"-->
+<!--                                 xmlns="http://www.w3.org/2000/svg">-->
+<!--                                <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                      d="M3 2H71C71.5523 2 72 2.44771 72 3V67C72 67.5523 71.5523 68 71 68H3C2.44772 68 2 67.5523 2 67V3C2 2.44772 2.44772 2 3 2ZM0 3C0 1.34315 1.34315 0 3 0H71C72.6569 0 74 1.34315 74 3V67C74 68.6569 72.6569 70 71 70H3C1.34314 70 0 68.6569 0 67V3ZM68 10H7V8H68V10ZM68 15H7V13H68V15ZM68 20H7V18H68V20ZM7 25H68V23H7V25ZM68 59V63H64V59H68ZM61 62.9996L61.0574 59L57.0578 58.9426L57.0004 62.9422L61 62.9996Z"-->
+<!--                                      fill="white"/>-->
+<!--                            </svg>-->
+<!--                        </div>-->
+<!--                        <div class="categories__item-name">-->
+<!--                            Конвекторы-->
+<!--                        </div>-->
+<!--                    </a>-->
+                    <a href="catalog/" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="75" height="52" viewBox="0 0 75 52" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -374,8 +367,8 @@
                         <div class="categories__item-name">
                             Крепления
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/steel-radiators.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="75" height="70" viewBox="0 0 90 70" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -411,11 +404,11 @@
                         <div class="categories__item-name">
                             Стальные радиаторы
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items boilers" id="3">
-                <div class="categories__item">
+            <div class="categories__items boilers" id="boilers">
+                <a href="catalog/indirect-boilers.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg width="125" height="125" xmlns="http://www.w3.org/2000/svg">
                             <g id="Layer_1">
@@ -439,9 +432,9 @@
                     <div class="categories__item-name">
                         Бойлеры косвенного нагрева
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/el-boilers.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="75" height="80" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Layer_1" stroke-width="2">
@@ -458,8 +451,8 @@
                         <div class="categories__item-name">
                             Электрические бойлеры
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/combi-boilers.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="75" height="75" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Layer_1">
@@ -486,11 +479,11 @@
                         <div class="categories__item-name">
                             Комбинированные бойлеры
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items pumps" id="4">
-                <div class="categories__item">
+            <div class="categories__items pumps" id="pumps">
+                <a href="catalog/heating-pumps.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg width="62" height="124" viewBox="0 0 62 124" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -511,9 +504,9 @@
                     <div class="categories__item-name">
                         Насосы для отопления
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/aws-pumps.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="57" height="75" viewBox="0 0 57 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -540,8 +533,8 @@
                         <div class="categories__item-name">
                             Насосы для ГВС
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/self-pumps.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="58" height="68" viewBox="0 0 58 68" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -565,23 +558,23 @@
                         <div class="categories__item-name">
                             Самовсасывающие насосы
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items valves" id="5">
+            <div class="categories__items valves" id="valves">
                 <div class="categories__item">
-                    <div class="categories__item-image">
+                    <a href="catalog/for-heating-floor.html" class="categories__item-image">
                         <svg fill="white" height="125" viewBox="0 0 512 512"
                              width="125" xmlns="http://www.w3.org/2000/svg">
                             <path d="m497 417.733h-17.133v-49.283c0-92.002-71.103-167.702-161.256-175.056-7.259-90.002-82.52-161.26-175.078-161.26h-49.266v-17.134c0-8.284-6.716-15-15-15h-64.267c-8.284 0-15 6.716-15 15v128.533c0 8.284 6.716 15 15 15h64.267c8.284 0 15-6.716 15-15v-17.133h49.267c35.821 0 72.35 24.936 80.03 66.399h-63.964c-88.145.001-159.6 71.311-159.6 159.601 0 88.004 71.596 159.6 159.6 159.6s159.6-71.596 159.6-159.6v-63.945c52.908 9.803 66.4 58.049 66.4 80.011v49.267h-17.133c-8.284 0-15 6.716-15 15v64.267c0 8.284 6.716 15 15 15h128.533c8.284 0 15-6.716 15-15v-64.267c0-8.284-6.716-15-15-15zm-432.733-289.2h-34.267v-98.533h34.267zm224.933 223.867c0 71.462-58.138 129.6-129.6 129.6s-129.6-58.138-129.6-129.6c0-71.576 57.904-129.6 129.6-129.6h65.333v34.267h-65.333c-52.567 0-95.333 42.767-95.333 95.334 0 52.566 42.767 95.333 95.333 95.333s95.333-42.767 95.333-95.333v-144.601c0-61.519-49.767-111.399-111.4-111.399h-49.266v-34.267h49.267c80.441 0 145.667 65.083 145.667 145.666v144.6zm-64.267-65.334v65.334c0 36.024-29.308 65.333-65.333 65.333s-65.333-29.308-65.333-65.333 29.309-65.334 65.333-65.334zm94.267-29.005v-34.496c73.298 7.525 130.667 69.633 130.667 144.886v49.283h-34.267v-49.267c0-57.647-43.214-103.291-96.4-110.406zm162.8 223.939h-98.533v-34.267h98.533z"/>
                         </svg>
-                    </div>
+                    </a>
                     <div class="categories__item-name">
-                        Металлопластиковые трубы PERT-AL-PERT и фитинги
+                        Металлопластиковые трубы и фитинги
                     </div>
                 </div>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/cu-pipes.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg fill="white" height="75"
                                  viewBox="0 0 512 512" width="75" xmlns="http://www.w3.org/2000/svg">
@@ -596,8 +589,8 @@
                         <div class="categories__item-name">
                             Медные трубы HME
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/s-fittings.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="69" height="65" viewBox="0 0 69 65" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -617,8 +610,8 @@
                         <div class="categories__item-name">
                             Медные фитинги SANHA под пайку
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/p-fittings.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="69" height="67" viewBox="0 0 69 67" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -638,52 +631,11 @@
                         <div class="categories__item-name">
                             Медные фитинги SANHA под пресс
                         </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item-image">
-                            <svg fill="white" xmlns="http://www.w3.org/2000/svg"
-                                 x="0px" y="0px"
-                                 viewBox="0 0 512 512" xml:space="preserve">
-<g>
-	<g>
-		<path d="M409.796,63.705C368.715,22.624,314.097,0,256,0S143.285,22.624,102.204,63.705C61.124,104.785,38.5,159.404,38.5,217.5
-			v267c0,15.164,12.337,27.5,27.5,27.5s27.5-12.336,27.5-27.5V362.059c2.806,3.146,5.699,6.231,8.704,9.236
-			C143.285,412.376,197.903,435,256,435c34.91,0,69.619-8.471,100.374-24.497c23.382-12.184,44.537-28.75,62.126-48.482V484.5
-			c0,15.164,12.337,27.5,27.5,27.5c15.163,0,27.5-12.336,27.5-27.5v-267C473.5,159.404,450.876,104.785,409.796,63.705z M66,497
-			c-6.893,0-12.5-5.607-12.5-12.5S59.107,472,66,472s12.5,5.607,12.5,12.5S72.893,497,66,497z M78.5,460.018
-			C74.747,458.093,70.5,457,66,457s-8.747,1.093-12.5,3.018V297.16c6.394,16.266,14.767,31.737,25,46.115V460.018z M446,497
-			c-6.893,0-12.5-5.607-12.5-12.5S439.107,472,446,472s12.5,5.607,12.5,12.5S452.893,497,446,497z M458.5,460.018
-			c-3.753-1.924-8-3.018-12.5-3.018s-8.747,1.093-12.5,3.018V217.5C433.5,119.626,353.874,40,256,40
-			c-41.618,0-82.085,14.707-113.945,41.411c-3.175,2.661-3.592,7.391-0.931,10.566c2.661,3.175,7.392,3.592,10.565,0.93
-			C180.854,68.462,217.899,55,256,55c89.603,0,162.5,72.897,162.5,162.5S345.603,380,256,380S93.5,307.103,93.5,217.5
-			c0-38.101,13.462-75.145,37.906-104.311c2.661-3.174,2.244-7.905-0.931-10.565c-3.174-2.66-7.904-2.244-10.565,0.93
-			C93.206,135.416,78.5,175.882,78.5,217.5C78.5,315.374,158.126,395,256,395c72.498,0,134.971-43.694,162.5-106.126v49.442
-			C380.37,389.5,319.819,420,256,420c-111.659,0-202.5-90.841-202.5-202.5S144.341,15,256,15s202.5,90.841,202.5,202.5V460.018z"/>
-	</g>
-</g>
-                                <g>
-	<g>
-		<path d="M256,80c-75.817,0-137.5,61.682-137.5,137.5S180.183,355,256,355s137.5-61.682,137.5-137.5S331.817,80,256,80z M256,340
-			c-67.547,0-122.5-54.953-122.5-122.5S188.453,95,256,95s122.5,54.953,122.5,122.5S323.547,340,256,340z"/>
-	</g>
-</g>
-                                <g>
-	<g>
-		<path d="M256,120c-53.762,0-97.5,43.738-97.5,97.5c0,53.762,43.738,97.5,97.5,97.5c53.762,0,97.5-43.738,97.5-97.5
-			C353.5,163.738,309.762,120,256,120z M256,300c-45.49,0-82.5-37.009-82.5-82.5c0-45.491,37.01-82.5,82.5-82.5
-			s82.5,37.009,82.5,82.5C338.5,262.991,301.49,300,256,300z"/>
-	</g>
-</g>
-</svg>
-                        </div>
-                        <div class="categories__item-name">
-                            Для теплого пола PE-RT / PEX
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items manSystems" id="6">
-                <div class="categories__item">
+            <div class="categories__items manSystems" id="manSystems">
+                <a href="catalog/warm-floor-items.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg width="150" height="150" viewBox="0 0 150 70" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -708,9 +660,9 @@
                     <div style="max-width: 150px" class="categories__item-name">
                         Управление системой "Тёплый пол"
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/weather-depended-items.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -740,8 +692,8 @@
                         <div class="categories__item-name">
                             Погодоадаптивная автоматика
                         </div>
-                    </div>
-                    <div style="position: relative; top: 83px" class="categories__item">
+                    </a>
+                    <a href="catalog/" style="position: relative; top: 83px" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -755,8 +707,8 @@
                         <div class="categories__item-name">
                             Управление котлом
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/room-indicators.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="73" height="73" viewBox="0 0 73 73" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -774,11 +726,11 @@
                         <div class="categories__item-name">
                             Комнатные терморегуляторы
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items forInstall" id="7">
-                <div class="categories__item">
+            <div class="categories__items forInstall" id="forInstall">
+                <a href="catalog/triple-valves.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg width="134" height="115" viewBox="0 0 134 115" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -822,9 +774,9 @@
                     <div class="categories__item-name">
                         Трёхходовые смесительные клапаны
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/combs.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="71" height="75" viewBox="0 0 71 43" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -934,8 +886,8 @@
                         <div class="categories__item-name">
                             Гребёнки
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/heat-carriers.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg height="50pt" fill="white" viewBox="0 0 512 512" width="68pt"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -947,8 +899,8 @@
                         <div class="categories__item-name">
                             Теплоносители
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/collector-wardrobes.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="70" height="73" viewBox="0 0 70 73" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -964,8 +916,8 @@
                         <div class="categories__item-name">
                             Шкафы коллекторные
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/accessories.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 64 64" width="75"
                                  height="75">
@@ -978,11 +930,11 @@
                         <div class="categories__item-name">
                             Принадлежности и аксессуары
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items installKits" id="8">
-                <div class="categories__item">
+            <div class="categories__items installKits" id="installKits">
+                <a href="catalog/hydro-collectors.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg width="148" height="150" viewBox="0 0 148 72" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -1188,9 +1140,9 @@
                     <div class="categories__item-name">
                         Гидравлические разделители и коллекторы
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/barberi-pumps.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="39" height="75" viewBox="0 0 39 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1211,8 +1163,8 @@
                         <div class="categories__item-name">
                             Насосные группы Barberi
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/bosch-pumps.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="39" height="75" viewBox="0 0 39 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1233,8 +1185,8 @@
                         <div class="categories__item-name">
                             Насосные группы Bosch
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/meibes-pumps.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="39" height="75" viewBox="0 0 39 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1255,8 +1207,8 @@
                         <div class="categories__item-name">
                             Насосные группы Meibes
                         </div>
-                    </div>
-                    <div class="categories__item">
+                    </a>
+                    <a href="catalog/wilo-pumps.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="39" height="75" viewBox="0 0 39 75" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1273,11 +1225,11 @@
                         <div class="categories__item-name">
                             Насосные группы Wilo
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="categories__items increaseTanks" id="9">
-                <div class="categories__item">
+            <div class="categories__items increaseTanks" id="increaseTanks">
+                <a href="catalog/heating-increase-tanks.html" class="categories__item">
                     <div class="categories__item-image">
                         <svg fill="white" height="125"
                              viewBox="0 0 512.003 512.003" width="125" xmlns="http://www.w3.org/2000/svg">
@@ -1287,9 +1239,9 @@
                     <div class="categories__item-name">
                         Расширительные баки для отопления
                     </div>
-                </div>
+                </a>
                 <div class="categories__item-block">
-                    <div class="categories__item">
+                    <a href="catalog/aws-increase-tanks.html" class="categories__item">
                         <div class="categories__item-image">
                             <svg width="47" height="75" viewBox="0 0 47 65" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1304,7 +1256,7 @@
                         <div class="categories__item-name">
                             Расширительные баки для ГВС
                         </div>
-                    </div>
+                    </a>
                     <div class="categories__item">
                         <div class="categories__item-image">
                             <svg width="47" height="75" viewBox="0 0 47 65" fill="none"
@@ -1316,9 +1268,9 @@
                                       stroke="white" stroke-width="2"/>
                             </svg>
                         </div>
-                        <div class="categories__item-name">
+                        <a href="catalog/ws-increase-tanks.html" class="categories__item-name">
                             Расширительные баки для водоснабжения
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1342,7 +1294,6 @@
 </div>
 
 <!--Начало каталога-->
-
 
 <!--Конец каталога-->
 

@@ -1,14 +1,24 @@
 window.onload
 {
     const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
-    const categoriesList = document.querySelectorAll('a.categories__list-item-link');
-    const categoriesItems = document.querySelectorAll('div.categories__items')
+    const categoriesList = document.getElementsByClassName('categories__list-item-link');
+    const categoriesItems = document.getElementsByClassName('categories__items');
     let aboutBlock = document.getElementsByClassName('about');
     let feedbacksBlock = document.getElementsByClassName('feedbacks');
     let categoriesBlock = document.getElementsByClassName('categories');
     let breadcrumbsBlock = document.getElementsByClassName('breadcrumbs');
-
-
+    // let showCatalog = new function () {
+    //     aboutBlock[0].classList.remove('active');
+    //     feedbacksBlock[0].classList.remove('active');
+    //     categoriesBlock[0].classList.add('active');
+    //     breadcrumbsBlock[0].classList.add('active');
+    // }
+    // let showMain = new function () {
+    //     aboutBlock[0].classList.add('active');
+    //     feedbacksBlock[0].classList.add('active');
+    //     categoriesBlock[0].classList.remove('active');
+    //     breadcrumbsBlock[0].classList.remove('active');
+    // }
     for (let anchor of anchors) {
         anchor.addEventListener("click", function (e) {
             if (e.target === anchors.item(1)) {
@@ -29,7 +39,6 @@ window.onload
                 behavior: "smooth",
                 block: "center"
             })
-
         })
     }
 
