@@ -132,13 +132,10 @@ body {
 /*    box-shadow: rgba(123, 190, 239, 0.06) 4px 4px 4px 4px;*/
 /*}*/
 
-.about {
-    display: none;
-}
 
-.about.active {
+.about {
     display: block;
-    margin-top: 315px;
+    margin-top: 125px;
     padding: 50px 0;
     background: #0f0c29; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
@@ -155,7 +152,7 @@ h2, h3 {
 .about__container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 45px 0;
+    padding: 70px 0;
 }
 
 .about__advantages-img svg {
@@ -285,7 +282,6 @@ h2, h3 {
 }
 
 
-
 .breadcrumbs__container {
     max-width: 1170px;
     margin: 0 auto
@@ -388,8 +384,8 @@ h2, h3 {
 
 .categories__item {
     margin: 12px;
-    width: 240px;
-    padding: 21px 0 10px 0;
+    max-width: 240px;
+    padding: 21px 0 11px 0;
     border-radius: 5px;
     border: 2px solid #9899c4;
     text-align: center;
@@ -399,11 +395,13 @@ h2, h3 {
 .categories__item-image {
     text-align: center;
     height: 75px;
-    width: 75px;
+    max-width: 75px;
     margin: 0 auto;
+    padding-bottom:10px;
 }
 
 .categories__item-image > svg {
+    box-sizing: border-box;
     vertical-align: center;
     margin: auto;
 }
@@ -413,29 +411,34 @@ h2, h3 {
     font-size: 16px;
     text-align: center;
     color: #9899c4;
-    max-width: 171px;
+    width: 220px;
     height: 38px;
-    margin: 10px auto 0 auto;
+    margin: 0 10px;
     transition-duration: 0.35s;
 }
 
 .categories__items > .categories__item {
-    padding: 61px 74px 60px 74px;
+    padding: 50px 40px 50px 40px;
+    max-width: 280px;
 }
 
 .categories__items > .categories__item > .categories__item-image {
-    width: 200px;
+    max-width: 200px;
     height: 125px;
     text-align: center;
     margin: 0 auto;
 }
 
+ #valves > .categories__item {
+    padding: 53px 40px 53px 40px;
+}
+
 .categories__items > .categories__item > .categories__item-name {
-    max-width: 215px;
-    margin-top: 38px;
+    width: 260px;
+    margin-top: 20px;
     font-size: 22px;
-    line-height: 26px;
-    height: 52px;
+    line-height: 28px;
+    height: 84px;
 }
 
 .categories__item-block {
@@ -472,7 +475,6 @@ div.catalog__item {
     box-shadow: 0 4px 40px rgba(20, 0, 255, 0.05);
     padding: 40px 20px;
 }
-
 
 
 div.catalog__item-image {
