@@ -293,7 +293,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    transition-duration: 0.5s;
 }
 
 .categories__item {
@@ -303,7 +302,6 @@ body {
     border-radius: 5px;
     border: 2px solid #9899c4;
     text-align: center;
-    transition-duration: 0.25s;
 }
 
 .categories__item-image {
@@ -328,7 +326,6 @@ body {
     width: 220px;
     height: 38px;
     margin: 0 10px;
-    transition-duration: 0.35s;
 }
 
 .categories__items > .categories__item {
