@@ -19,7 +19,15 @@ window.onload
     // }
     for (let anchor of anchors) {
         anchor.addEventListener("click", function (e) {
-            if (e.target !== anchors.item(1)) {
+            if (e.target === anchors.item(0)) {
+                e.preventDefault();
+                const blockId = anchor.getAttribute('href')
+                document.querySelector('' + blockId).scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                })
+            }
+            if (e.target === anchors.item(1)) {
                 e.preventDefault();
                 const blockId = anchor.getAttribute('href')
                 document.querySelector('' + blockId).scrollIntoView({
