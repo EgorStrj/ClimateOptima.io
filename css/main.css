@@ -529,9 +529,9 @@ h2, h3 {
 
 /*Loader*/
 
-body {
-    background-color: #222;
-}
+/*body {*/
+/*    background-color: #222;*/
+/*}*/
 #preloader {
     position: fixed;
     top: 0;

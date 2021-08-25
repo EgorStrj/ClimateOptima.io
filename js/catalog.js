@@ -1,4 +1,4 @@
 window.onload
 {
-    document.getElementsByClassName('preloader')[0].style.display = 'none';
+    document.getElementsByClassName('preloader').item(0).style.display = 'none';
 }
