@@ -1,6 +1,6 @@
 window.onload
 {
-    document.getElementById('preloader').style.display = 'none';
+    document.getElementsByClassName('preloader')[0].style.display = 'none';
     const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
 
     for (let anchor of anchors) {
