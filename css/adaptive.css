@@ -1,4 +1,20 @@
+.menu__open {
+    display: none;
+}
+
+@media screen and (max-width: 1210px) {
+    .categories__container {
+        margin: 0 20px
+    }
+
+    .breadcrumbs__container {
+        margin: 0 20px;
+    }
+}
+
 @media screen and (max-width: 1199px) {
+
+
     .header__container {
         margin: 0 20px;
         align-items: center;
@@ -24,6 +40,47 @@
     .feedbacks {
         margin-top: 40px;
     }
+
+
+    /*    catalog*/
+    .categories__items > .categories__item {
+        padding: 50px 40px 50px 40px;
+        max-width: 280px;
+    }
+
+    .categories__item {
+        max-width: 235px;
+    }
+
+    .categories__items > .categories__item > .categories__item-name {
+        width: 237px;
+    }
+
+    .categories__item-name {
+        width: 215px;
+        margin: 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 1174px) {
+    .categories__item-name {
+        width: 165px;
+    }
+
+    .categories__item {
+        max-width: 200px;
+    }
+
+    .categories__items > .categories__item {
+        padding: 50px 10px 50px 10px;
+        max-width: 215px;
+    }
+
+    .categories__items > .categories__item > .categories__item-name {
+        width: 195px;
+    }
+
 }
 
 @media screen and (max-width: 999px) {
@@ -35,6 +92,49 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 974px) {
+    .categories__items:target {
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 426px;
+    }
+
+    #valves > .categories__item {
+        padding: 15px 10px 10px 10px;
+        max-width: 426px;
+    }
+
+    .categories__items > .categories__item {
+        padding: 15px 10px 10px 10px;
+        max-width: 426px;
+    }
+
+    .categories__items > .categories__item > .categories__item-name {
+        width: 357px;
+    }
+
+    .categories__item-block {
+        justify-content: center;
+    }
+
+    .categories__items > .categories__item > .categories__item-name {
+        height: 50px;
+    }
+
+    .categories__list {
+        border: none;
+        padding: 0 36px 0 0;
+    }
+
+    .categories__items:target {
+        border-left: 2px solid #9899c4;
+        padding-left: 12px;
+    }
+
+}
+
 
 @media screen and (max-width: 767px) {
     .menu__open {
@@ -78,6 +178,42 @@
 
     .phones__item {
         text-align: center;
+    }
+
+    .categories__container {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories__items:target {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .categories__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    .categories__list {
+        padding: 14px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 2px solid #9899c4;
+        margin: 0;
+    }
+
+    .categories {
+        padding: 0 0 45px 0;
+    }
+
+    .categories__list-item {
+        margin: 0 15px;
     }
 }
 
