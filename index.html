@@ -5,12 +5,32 @@
     <title>ClimateOptima</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="images/Head.png">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="icon" href="images/Head.png">
 </head>
 <body>
 
 <header class="header">
     <div class="header__container">
+        <svg class="menu__open" height="32px" fill="white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"/>
+	</g>
+</g>
+            <g>
+	<g>
+		<path d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"/>
+	</g>
+</g>
+            <g>
+	<g>
+		<path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+			C512,404.954,503.046,396,492,396z"/>
+	</g>
+</g>
+</svg>
         <a class="logo" href="index.html">
             <div class="logo__img">
                 <svg height="32pt" fill="white" viewBox="-2 0 511 512" width="32pt" xmlns="http://www.w3.org/2000/svg">
@@ -106,10 +126,56 @@
     </div>
 </div>
 
-<!--Loader-->
-<div class="preloader">
-    <div class="loader"></div>
-</div>
+<!--form-->
+<!--<div class="form">-->
+<!--    <div class="form__container">-->
+<!--        <h2 class="block-title">-->
+<!--            Оформление заказа-->
+<!--        </h2>-->
+<!--        <div class="sub-title">-->
+<!--            Заполните данные для оформления заказа-->
+<!--        </div>-->
+<!--        <div class="enter-data">-->
+<!--            1. Личные данные-->
+<!--        </div>-->
+<!--        <form method="post">-->
+<!--            <div class="form-input">-->
+<!--                <input type="text" datatype="name"  id="name" required placeholder="Ваше имя">-->
+<!--            </div>-->
+<!--            <div class="val-error">-->
+<!--                <p>-->
+<!--                    Введите имя!-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="form-input">-->
+<!--                <input type="tel"  id="tel" required placeholder="Ваш телефон">-->
+<!--            </div>-->
+<!--            <div class="val-error">-->
+<!--                <p>-->
+<!--                    Введите ваш телефон!-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <button class="form__call-button">Оставить заявку</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--        <div>-->
+<!--            <label class="form__label" for="number"></label>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input id="number" type="number" placeholder="Номер телефона" class="form__input-number">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <label class="form__label" for="name"></label>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <input id="name" type="text" datatype="name" placeholder="Имя" class="form__input-name">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <button class="form__call-button">Оставить заявку</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <!---->
 
 <footer class="footer">
@@ -149,5 +215,6 @@
     </div>
 </footer>
 </body>
+<script src="js/jquery-3.6.0.js"></script>
 <script src="js/main.js"></script>
 </html>
