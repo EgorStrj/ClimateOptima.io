@@ -220,6 +220,34 @@
 
 
 @media screen and (max-width: 767px) {
+
+    .menu.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(49, 44, 82, 0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        margin: 0;
+    }
+
+    .menu.active::after {
+        content: url("../images/error.png");
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .menu__item {
+        margin-top: 20px;
+    }
+
+
     .menu__open {
         display: block;
     }
@@ -421,8 +449,10 @@
         margin-top: 35px;
     }
 
-
 }
+
+
+
 
 @media screen and (max-width: 479px) {
     .about__title {
