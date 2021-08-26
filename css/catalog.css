@@ -20,7 +20,7 @@ a {
 
 body {
     margin: 0;
-    background: #fefefe;
+    background: rgba(150, 164, 255, 0.2);
     background-size: cover;
 }
 
