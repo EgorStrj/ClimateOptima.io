@@ -12,10 +12,16 @@ window.onload
         $(menu).removeClass('active')
     })
 
-    let up = document.getElementsByClassName('up').item(0);
-    let header = document.getElementsByClassName('.header').item(0);
-    // $(up).click((e)=> {
-    //     scroll(0, 100)
+    // let up = document.getElementsByClassName('up').item(0);
+    // let header = document.getElementsByTagName('Header');
+    // $(up).click((e) => {
+    //     if (e.target === up) {
+    //         e.preventDefault();
+    //         header.scrollIntoView( {
+    //             behavior: "smooth",
+    //             block: "start"
+    //         })
+    //     }
     //
     // })
 

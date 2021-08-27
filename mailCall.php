@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $content = ' Оставил запрос на звонок по номеру: ' . $tel;
 
     // Первый параметр - кому отправляем письмо, второй - тема письма, третий - содержание
-    $success = mail("", 'Заявка на звонок', $content);
+    $success = mail("egor.strj@gmail.com", 'Заявка на звонок', $content);
 
     if ($success) {
         // Отдаем 200 код ответа на http запрос
