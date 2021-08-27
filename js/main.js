@@ -2,13 +2,15 @@ window.onload
 {
 
     let menuBtn = document.getElementsByClassName('menu__open').item(0);
-    menuBtn.addEventListener('click', function () {
-        menu.classList.add('active');
+    let closeMenu = document.getElementsByClassName('menu__close').item(0);
+
+    $(menuBtn).click(() => {
+        $(menu).addClass('active');
     })
 
-
-
-
+    $(closeMenu).click(() => {
+        $(menu).removeClass('active')
+    })
 
     const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
     let menu = document.getElementsByClassName('menu').item(0);
@@ -23,9 +25,9 @@ window.onload
                 })
                 menu.classList.remove('active')
             }
+
         })
     }
-
 
 
     //form
@@ -33,33 +35,34 @@ window.onload
     //
     //
 
+    let close = document.getElementsByClassName('close').item(0);
     let button = document.getElementsByClassName('call-btn').item(0);
-
     let callBtn = document.getElementsByClassName('form__call-button').item(0);
-
     let form = document.getElementsByClassName('form').item(0);
-
-    button.addEventListener('click', function (e) {
-        form.item(0).classList.add('active');
-        console.log(form.item(0))
-    })
-
-
     let tel = document.getElementsByClassName('call-input').item(1);
     let name = document.getElementsByClassName('call-input').item(0);
     let recallThanks = document.getElementsByClassName('recall-thanks').item(0);
     let error = document.getElementsByClassName('val-error');
+    let formContainer = document.getElementsByClassName('form__container').item(0);
+
+    $(close).click(() => {
+        $(form).removeClass('active');
+    })
+
+    $(button).click(() => {
+        $(form).addClass('active');
+    })
 
     $(callBtn).click(() => {
-        if (tel.val()) {
+        if (tel.val() && name.val()) {
             $(error).fadeOut();
             $.ajax({
                 type: 'post',
                 url: '../mailCall.php',
                 data: 'tel1=' + tel.val(),
                 success: () => {
-                    $(form).fadeOut();
-                    $(recallThanks).fadeIn();
+                    $(formContainer).fadeOut();
+                    $(recallThanks).addClass('active');
                 },
                 error: () => {
                     $(form).fadeOut();
@@ -70,8 +73,6 @@ window.onload
             $(error).fadeIn();
         }
     });
-
-
 
 
 }

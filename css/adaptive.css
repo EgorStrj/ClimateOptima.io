@@ -2,6 +2,14 @@
     display: none;
 }
 
+.menu__close {
+    display: none;
+}
+
+
+.form {
+    display: none;
+}
 
 .form.active {
     background: rgba(9, 9, 49, 0.9);
@@ -88,6 +96,7 @@
 }
 
 .recall-thanks.active {
+    display: block;
     width: 270px;
     background: #f2f1ff;
     border-radius: 20px;
@@ -325,6 +334,10 @@
 
 @media screen and (max-width: 767px) {
 
+    .menu__close {
+        display: block;
+    }
+
     .menu.active {
         position: fixed;
         top: 0;
@@ -340,8 +353,7 @@
         margin: 0;
     }
 
-    .menu.active::after {
-        content: url("../images/error.png");
+    .menu__close {
         position: absolute;
         top: 32px;
         right: 32px;
