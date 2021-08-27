@@ -47,7 +47,7 @@
             </div>
             <span class="logo__text">ClimateOptima</span>
         </a>
-        <div class="menu active">
+        <div class="menu">
             <a href="#about" class="menu__item">О нас</a>
             <a href="catalog.html#heaters" class="menu__item">Каталог</a>
             <a href="#feedbacks" class="menu__item">Отзывы</a>
@@ -126,57 +126,41 @@
     </div>
 </div>
 
-<!--form-->
-<!--<div class="form">-->
-<!--    <div class="form__container">-->
-<!--        <h2 class="block-title">-->
-<!--            Оформление заказа-->
-<!--        </h2>-->
-<!--        <div class="sub-title">-->
-<!--            Заполните данные для оформления заказа-->
-<!--        </div>-->
-<!--        <div class="enter-data">-->
-<!--            1. Личные данные-->
-<!--        </div>-->
-<!--        <form method="post">-->
-<!--            <div class="form-input">-->
-<!--                <input type="text" datatype="name"  id="name" required placeholder="Ваше имя">-->
-<!--            </div>-->
-<!--            <div class="val-error">-->
-<!--                <p>-->
-<!--                    Введите имя!-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="form-input">-->
-<!--                <input type="tel"  id="tel" required placeholder="Ваш телефон">-->
-<!--            </div>-->
-<!--            <div class="val-error">-->
-<!--                <p>-->
-<!--                    Введите ваш телефон!-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div>-->
-<!--                <button class="form__call-button">Оставить заявку</button>-->
-<!--            </div>-->
-<!--        </form>-->
-<!--        <div>-->
-<!--            <label class="form__label" for="number"></label>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <input id="number" type="number" placeholder="Номер телефона" class="form__input-number">-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <label class="form__label" for="name"></label>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <input id="name" type="text" datatype="name" placeholder="Имя" class="form__input-name">-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <button class="form__call-button">Оставить заявку</button>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!---->
+
+<div class="form active">
+    <div class="form__container">
+        <img src="images/cancel.png" alt="">
+        <h2 class="block-title">
+            Оставьте заявку на звонок
+        </h2>
+        <form method="post">
+            <div class="form-input">
+                <input class="call-input" type="text" datatype="name"  id="name" required placeholder="Ваше имя">
+            </div>
+            <div class="val-error">
+                <p>
+                    Введите имя!
+                </p>
+            </div>
+            <div class="form-input">
+                <input class="call-input" type="tel"  id="tel" required placeholder="Ваш телефон">
+            </div>
+            <div class="val-error">
+                <p>
+                    Введите ваш телефон!
+                </p>
+            </div>
+            <div>
+                <button class="form__call-button">Оставить заявку</button>
+            </div>
+        </form>
+    </div>
+    <div class="recall-thanks">
+        <h2>Заявка успешно оставлена, дожидайтесь звонка.</h2>
+        <button class="form__call-button close-btn">Закрыть</button>
+    </div>
+</div>
+
 
 <footer class="footer">
     <div class="footer__container">

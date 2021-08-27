@@ -1,18 +1,6 @@
 window.onload
 {
 
-    let button = document.getElementsByClassName('call-btn').item(0);
-
-    let form = document.getElementsByClassName('form');
-
-    button.addEventListener('click', function (e) {
-        form.item(0).classList.add('active');
-        console.log(form.item(0))
-    })
-
-
-
-
     let menuBtn = document.getElementsByClassName('menu__open').item(0);
     menuBtn.addEventListener('click', function () {
         menu.classList.add('active');
@@ -37,6 +25,53 @@ window.onload
             }
         })
     }
+
+
+
+    //form
+    //
+    //
+    //
+
+    let button = document.getElementsByClassName('call-btn').item(0);
+
+    let callBtn = document.getElementsByClassName('form__call-button').item(0);
+
+    let form = document.getElementsByClassName('form').item(0);
+
+    button.addEventListener('click', function (e) {
+        form.item(0).classList.add('active');
+        console.log(form.item(0))
+    })
+
+
+    let tel = document.getElementsByClassName('call-input').item(1);
+    let name = document.getElementsByClassName('call-input').item(0);
+    let recallThanks = document.getElementsByClassName('recall-thanks').item(0);
+    let error = document.getElementsByClassName('val-error');
+
+    $(callBtn).click(() => {
+        if (tel.val()) {
+            $(error).fadeOut();
+            $.ajax({
+                type: 'post',
+                url: '../mailCall.php',
+                data: 'tel1=' + tel.val(),
+                success: () => {
+                    $(form).fadeOut();
+                    $(recallThanks).fadeIn();
+                },
+                error: () => {
+                    $(form).fadeOut();
+                    alert('Возникла ошибка, ппожалуйста, позвоните по указанным номерам телефона');
+                },
+            });
+        } else {
+            $(error).fadeIn();
+        }
+    });
+
+
 
 
 }
