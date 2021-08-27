@@ -48,6 +48,7 @@
             <span class="logo__text">ClimateOptima</span>
         </a>
         <div class="menu">
+            <img class="menu__close" src="../images/error.png" alt="">
             <a href="../index.html#about" class="menu__item">О нас</a>
             <a href="../index.html" class="menu__item">Главная</a>
             <a href="../index.html#feedbacks" class="menu__item">Отзывы</a>
@@ -183,12 +184,43 @@
         </div>
     </div>
 </footer>
-
-<script src="../js/main.js"></script>
-<!--Loader-->
-<div class="preloader">
-    <div class="loader"></div>
+<div class="form">
+    <div class="form__container">
+        <img class="close" src="../images/cancel.png" alt="">
+        <h2 class="block-title">
+            Оставьте заявку на звонок
+        </h2>
+        <form>
+            <div class="form-input">
+                <input class="call-input" type="text" datatype="name"  id="name" required placeholder="Ваше имя">
+            </div>
+            <div class="val-error">
+                <p>
+                    Введите имя!
+                </p>
+            </div>
+            <div class="form-input">
+                <input class="call-input" type="tel"  id="tel" required placeholder="Ваш телефон">
+            </div>
+            <div class="val-error">
+                <p>
+                    Введите ваш телефон!
+                </p>
+            </div>
+            <div>
+                <button class="form__call-button">Оставить заявку</button>
+            </div>
+        </form>
+    </div>
+    <div class="recall-thanks">
+        <h2>Заявка успешно оставлена, дожидайтесь звонка.</h2>
+        <button class="form__call-button close-btn">Закрыть</button>
+    </div>
 </div>
-<!---->
+
+
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/main.js"></script>
+
 </body>
 </html>

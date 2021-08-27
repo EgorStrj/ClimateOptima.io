@@ -12,22 +12,22 @@ window.onload
         $(menu).removeClass('active')
     })
 
-    const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
+    // const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
     let menu = document.getElementsByClassName('menu').item(0);
-    for (let anchor of anchors) {
-        anchor.addEventListener("click", function (e) {
-            if (e.target !== anchors.item(1)) {
-                e.preventDefault();
-                const blockId = anchor.getAttribute('href')
-                document.querySelector('' + blockId).scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                })
-                menu.classList.remove('active')
-            }
-
-        })
-    }
+    // for (let anchor of anchors) {
+    //     anchor.addEventListener("click", function (e) {
+    //         if (e.target !== anchors.item(1)) {
+    //             e.preventDefault();
+    //             const blockId = anchor.getAttribute('href')
+    //             document.querySelector('' + blockId).scrollIntoView({
+    //                 behavior: "smooth",
+    //                 block: "center"
+    //             })
+    //             menu.classList.remove('active')
+    //         }
+    //
+    //     })
+    // }
 
 
     //form
