@@ -6,6 +6,13 @@
     display: none;
 }
 
+.up {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
 
 .form {
     display: none;
@@ -100,7 +107,7 @@
     width: 270px;
     background: #f2f1ff;
     border-radius: 20px;
-    box-shadow: 0 9px 54px 3px rgba(110,87,68,0.15);
+    box-shadow: 0 9px 54px 3px rgba(110, 87, 68, 0.15);
     padding: 50px 30px;
     text-align: center;
     position: relative;
@@ -333,6 +340,14 @@
 
 
 @media screen and (max-width: 767px) {
+
+    .up > img {
+        height: 48px;
+    }
+    .up {
+        right: 20px;
+        bottom: 20px;
+    }
 
     .menu__close {
         display: block;
@@ -596,6 +611,10 @@
 
 
 @media screen and (max-width: 479px) {
+
+    .up > img {
+        height: 32px;
+    }
     .about__title {
         font-size: 28px;
         line-height: 32px;
@@ -666,7 +685,6 @@
 @media screen and (max-width: 433px) {
 
 
-
     .form__container {
         width: 250px;
         padding: 20px 15px;
@@ -688,8 +706,6 @@
         font-size: 16px;
         line-height: 21px;
     }
-
-
 
 
     .categories__items > .categories__item {

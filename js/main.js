@@ -12,8 +12,15 @@ window.onload
         $(menu).removeClass('active')
     })
 
-    // const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
+    let up = document.getElementsByClassName('up').item(0);
+    let header = document.getElementsByClassName('.header').item(0);
+    // $(up).click((e)=> {
+    //     scroll(0, 100)
+    //
+    // })
+
     let menu = document.getElementsByClassName('menu').item(0);
+    // const anchors = document.querySelectorAll('a.menu__item[href*="#"]');
     // for (let anchor of anchors) {
     //     anchor.addEventListener("click", function (e) {
     //         if (e.target !== anchors.item(1)) {
