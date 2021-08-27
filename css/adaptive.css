@@ -658,6 +658,7 @@
 
     div.catalog__item-image {
         width: 140px;
+        height: 70px;
     }
 
     .catalog__item-name {
